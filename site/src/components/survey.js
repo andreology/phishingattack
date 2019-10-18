@@ -2,26 +2,35 @@ import React, { Component } from 'react';
 
 class Survey extends Component {
 
-  state = {
-    responses: {
-      fname: '',
-      bday: ''
-    }
-}
+  constructor() {
+    super();
+
+    this.state = {
+      firstName: "",
+      lastName: "",
+      email: "",
+    };
+  }
 
  inputChanged = event => {
-   let resp = this.state.responses;
-   resp[event.target.name] = event.target.value;
-   this.setState({responses: resp});
+  this.setState({
+    [event.target.id]:
+      event.target.value
+  });
  }
 
   render() {
+    const { firstName, lastName, email } = this.state;
+
     return <div>
-      <span>What is your First Name?</span><br/>
-      <input type="text" name="fname" value={this.state.responses.fname}
+      <span>What is your first name?</span><br/>
+      <input type="text" id="firstName" value={firstName}
         onChange={this.inputChanged}/><br/>
-      <span>What is your Birthday?</span><br/>
-        <input type="text" name="bday" value={this.state.responses.bday}
+      <span>What is your last name?</span><br/>
+        <input type="text" id="lastName" value={lastName}
+          onChange={this.inputChanged}/><br/>
+      <span>What is your email?</span><br/>
+        <input type="text" id="email" value={email}
           onChange={this.inputChanged}/><br/>
     </div>
   }
