@@ -13,7 +13,7 @@ header img {
 }
 
 #name {
-	width: 1000px;
+	width: 65%;
 	height: auto;
 	padding-left: 4%;
 	padding-bottom: 8%
@@ -22,4 +22,9 @@ header img {
 
 main {
 	background: white;
+	padding: 2%;
+}
+
+main p {
+	font-weight: 600;
 }
