@@ -28,3 +28,23 @@ main {
 main p {
 	font-weight: 600;
 }
+
+#question {
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+#question li{
+	padding: 15px 0;
+}
+
+.text {
+	width: 50%;
+	height: 100px;
+}
+
+#button {
+	padding: 30px;
+	text-align: center;
+}
