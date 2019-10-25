@@ -2,7 +2,7 @@ const express = require('express');
 var bodyParser = require('body-parser')
 var nodemailer = require('nodemailer');
 const app = express();
-var port = 3000;
+var port = 3001;
 var transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 587,
@@ -27,7 +27,7 @@ app.post('/sendEmail', function(req, res) {
     from: "CSULB Parking<donotreply@csulb.com>",
     to: req.body.email,
     subject: "Take our survey",
-    html: "Dear student,<br><br>Please answer our survey to get a chance of winning a Starbucks gift card : <a href=https://csulb-parking-survey.firebaseapp.com/>https://www.csulb.edu/parking-and-transportation-services/survey</a> <br><br>Parking and Transportation Services<br>California State University, Long Beach<br><a href=https://twitter.com/csulb_parking>@CSULB_Parking</a><br>562.985.4146"
+    html: "Dear student,<br><br>Please answer our survey to get a chance of winning a Starbucks gift card: <a href=https://csulb-parking-survey.firebaseapp.com/>https://www.csulb.edu/parking-and-transportation-services/survey</a> <br><br>Parking and Transportation Services<br>California State University, Long Beach<br><a href=https://twitter.com/csulb_parking>@CSULB_Parking</a><br>562.985.4146"
 
   };
 
