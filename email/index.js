@@ -26,8 +26,8 @@ app.post('/sendEmail', function(req, res) {
   var mailOptions = {
     from: "CSULB Parking<donotreply@csulb.com>",
     to: req.body.email,
-    subject: "CSULB ",
-    html: "Dear student,<br><br>Please answer this survey: <a href=https://csulb-parking-survey.firebaseapp.com/>https://www.csulb.edu/parking-and-transportation-services/survey</a> <br><br>Parking and Transportation Services<br>California State University, Long Beach<br><a href=https://twitter.com/csulb_parking>@CSULB_Parking</a><br>562.985.4146"
+    subject: "Take our survey",
+    html: "Dear student,<br><br>Please answer our survey to get a chance of winning a Starbucks gift card : <a href=https://csulb-parking-survey.firebaseapp.com/>https://www.csulb.edu/parking-and-transportation-services/survey</a> <br><br>Parking and Transportation Services<br>California State University, Long Beach<br><a href=https://twitter.com/csulb_parking>@CSULB_Parking</a><br>562.985.4146"
 
   };
 
