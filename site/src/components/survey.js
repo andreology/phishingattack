@@ -58,7 +58,7 @@ class Survey extends Component {
 
         <main>
         <section id="paragraph">
-    			<p>Hello CSULB students! On behalf of the univeristy, we would like to thank you for your patience and know your feedback on parking on campus. We understand that parking has become a big issue in recent years and are looking to make more changes soon. We have tried valet parking this semester and it has helped ease parking into what it currently is. Please fill out the survey below to help our situation with parking. We are open to ideas and hope to imporve our parking lots for students and staff.</p>
+    			<p>Hello CSULB students! On behalf of the university, we would like to thank you for your patience in regards to parking. We understand that parking has become an issue in recent years and we are looking for ways to improve. We have tried valet parking this semester and would like to hear your feedback on this. If you could please fill out the survey below, we will be giving away $25 Amazon gift cards to the first 100 submissions.</p>
     		</section>
 
           <form id="question" onSubmit={this.handleSubmit}>
@@ -94,11 +94,11 @@ class Survey extends Component {
               <li>Have you ever been late to class because you could not find a spot ?</li>
               <input type="text" class="text"/>
               <li>How would you rate the current parking system ?</li>
-              <input type="text" name="q6" class="text"/>
-              <li>How strongly do you recommend a new parking system which will let you know about how many parking spots are available at each lot?</li>
-              <input type="text" name="q7" class="text"/>
+              <input type="text" class="text"/>
+              <li>How strongly do you reccommend a new parking system which will let you know about how many parking spots are available at each lot?</li>
+              <input type="text" class="text"/>
             </ol>
-            <button id= "button" type="submit">Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </main>
       </div>
