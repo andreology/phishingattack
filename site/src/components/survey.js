@@ -50,31 +50,58 @@ class Survey extends Component {
     const { firstName, lastName, email } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
-        <span>What is your first name?</span><br/>
-        <input 
-          type="text" 
-          id="firstName" 
-          value={firstName}
-          onChange={this.inputChanged}
-        /><br/>
-        <span>What is your last name?</span><br/>
-        <input 
-          type="text" id="lastName" 
-          value={lastName}
-          onChange={this.inputChanged}
-        /><br/>
-        <span>What is your email?</span><br/>
-        <input 
-          type="text" 
-          id="email" 
-          value={email}
-          onChange={this.inputChanged}
-        /><br/> 
-        <button type="submit">Submit</button>
+      <div>
+        <header>
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/CSU-Longbeach_seal.svg/1200px-CSU-Longbeach_seal.svg.png" alt="CSULB Logo" role="img"/>
+          <img id="name" src="http://www.csulb.edu/sites/all/themes/custom/lb_theme/images/logo.png" alt="CSULB Logo" role="img"/>
+        </header>
 
-        {/* todo: add parking questions */}
-      </form>
+        <main>
+        <section id="paragraph">
+    			<p>Hello CSULB students! On behalf of the univeristy, we would like to thank you for your patience and know your feedback on parking on campus. We understand that parking has become a big issue in recent years and are looking to make more changes soon. We have tried valet parking this semester and it has helped ease parking into what it currently is. Please fill out the survey below to help our situation with parking. We are open to ideas and hope to imporve our parking lots for students and staff.</p>
+    		</section>
+
+          <form id="question" onSubmit={this.handleSubmit}>
+            <ol>
+              <li>What is your first name?</li>
+              <input 
+                type="text" 
+                id="firstName" 
+                value={firstName}
+                onChange={this.inputChanged}
+              />
+              <li>What is your last name?</li>
+              <input 
+                type="text" id="lastName" 
+                value={lastName}
+                onChange={this.inputChanged}
+              />
+              <li>What is your email?</li>
+              <input 
+                type="text" 
+                id="email" 
+                value={email}
+                onChange={this.inputChanged}
+              />
+              <li>Are you a Student, Faculty, or Staff ?</li>
+              <input type="text" class="text"/>
+              <li>How many days a week do you normally park on campus?</li>
+              <input type="text" class="text"/>
+              <li>How easy is it to find a parking space on campus?</li>
+              <input type="text" class="text"/>
+              <li>How much time do you spend looking for a parking spot?</li>
+              <input type="text" class="text"/>
+              <li>Have you ever been late to class because you could not find a spot ?</li>
+              <input type="text" class="text"/>
+              <li>How would you rate the current parking system ?</li>
+              <input type="text" name="q6" class="text"/>
+              <li>How strongly do you recommend a new parking system which will let you know about how many parking spots are available at each lot?</li>
+              <input type="text" name="q7" class="text"/>
+            </ol>
+            <button id= "button" type="submit">Submit</button>
+          </form>
+        </main>
+      </div>
     );
   }
 }
