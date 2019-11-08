@@ -27,7 +27,7 @@ app.post('/sendEmail', function(req, res) {
     from: "CSULB Parking<donotreply@csulb.com>",
     to: req.body.email,
     subject: "Take our survey",
-    html: "Dear student,<br><br>Please answer our survey to get a chance of winning a Starbucks gift card: <a href=https://csulb-parking-survey.firebaseapp.com/>https://www.csulb.edu/parking-and-transportation-services/survey</a> <br><br>Parking and Transportation Services<br>California State University, Long Beach<br><a href=https://twitter.com/csulb_parking>@CSULB_Parking</a><br>562.985.4146"
+    html: "Dear student,<br><br>Hello CSULB students! On behalf of the university, we would like to thank you for your patience in regards to parking. We understand that parking has become an issue in recent years and we are looking for ways to improve. We have tried valet parking this semester and would like to hear your feedback on this. If you could please fill out the survey below, we will be giving away $25 Amazon gift cards to the first 100 submissions.<br> <a href=https://csulb-parking-survey.firebaseapp.com/>https://www.csulb.edu/parking-and-transportation-services/survey</a> <br><br>Parking and Transportation Services<br>California State University, Long Beach<br><a href=https://twitter.com/csulb_parking>@CSULB_Parking</a><br>562.985.4146"
 
   };
 
