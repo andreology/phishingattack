@@ -20,7 +20,7 @@ header img {
 
 }
 
-form {
+main {
 	background: white;
 	padding: 2%;
 }
@@ -50,4 +50,9 @@ main p {
 	padding: 30px;
   text-align: center;
   margin-top: 15px;
+}
+
+footer {
+	text-align: center;
+	padding: 2% 0;
 }

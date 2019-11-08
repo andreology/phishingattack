@@ -100,12 +100,12 @@ class Survey extends Component {
             </ol>
             <button type="submit">Submit</button>
           </form>
-          <footer role="contentinfo">
+        </main>
+        <footer role="contentinfo">
             <p>1250 Bellflower Boulevard</p>
             <p>Long Beach, California 90840</p>
             <p>562.985.4111</p>
-          </footer>
-        </main>
+        </footer>
       </div>
     );
   }
