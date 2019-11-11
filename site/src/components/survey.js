@@ -104,7 +104,7 @@ class Survey extends Component {
               <textarea rows="10" cols="80" className="text"></textarea>
               <li>How much time do you spend looking for a parking spot?</li>
               <textarea rows="10" cols="80" className="text"></textarea>
-              <li>Have you ever been late to className because you could not find a spot ?</li>
+              <li>Have you ever been late to class because you could not find a spot ?</li>
               <textarea rows="10" cols="80" className="text"></textarea>
               <li>How would you rate the current parking system ?</li>
               <textarea rows="10" cols="80" className="text"></textarea>
