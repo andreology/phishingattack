@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 class Survey extends Component {
-  notify = () => toast("Thank you for your time, we have received your answers. We will contact you if you were part of the hundred students.");
+  notify = () => toast("Thank you for your time, we have received your answers. We will contact you if you one of the first 100 submissions.");
 
   constructor() {
     super();
