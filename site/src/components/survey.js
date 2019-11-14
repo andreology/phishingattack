@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import firebase from '../firebase';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class Survey extends Component {
+  notify = () => toast("Thank you for your time, we have received your answers. We will contact you if you were part of the hundred students.");
 
   constructor() {
     super();
@@ -46,8 +49,9 @@ class Survey extends Component {
       firstName: "",
       lastName: "",
       email: "",
-      hasError: false
+      hasError: false,
     });
+    this.notify();
   }
   else {
     this.setState({
@@ -114,6 +118,7 @@ class Survey extends Component {
             <button className="sub-button" type="submit">Submit</button>
             {this.state.hasError ? <div class="error">Please fill out your firstname, lastname and email.</div> : "" }
           </form>
+          <ToastContainer autoClose={15000}/>
         </main>
         <footer role="contentinfo">
           <div className="footer-text">
